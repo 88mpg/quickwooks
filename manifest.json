@@ -1,0 +1,15 @@
+{
+  "name": "Quickwooks",
+  "version": "0.1",
+  "permissions": [
+    "https://www.cashortrade.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://cashortrade.org/phish-tickets/?search_phrase=Phish"],
+      "js": ["filter.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
